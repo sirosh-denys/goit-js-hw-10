@@ -18,3 +18,40 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country-block {
+  display: block;
+  text-decoration: none;
+}
+
+.country-strig {
+  display: flex;  
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.country-name {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.countryFull-strig {
+  display: flex;  
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.countryFull-nameCommon {
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.countryFull-parametersCommon {
+  font-size: 22px;
+}
+
+.countryFull-parametersCommonBold {
+  font-size: 22px;
+  font-weight: 700;
+}
