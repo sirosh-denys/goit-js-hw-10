@@ -51,7 +51,7 @@ const refs = {
   list: document.querySelector(`.country-list`),
 };
 
-let items = [];
+let items = [0];
 
 refs.form.addEventListener(`input`, _.debounce(onInput, DEBOUNCE_DELAY));
 
