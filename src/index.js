@@ -65,12 +65,22 @@ function onInput(event) {
     return;
   }
 
-  fetchCountries(`${URL}${query}${PARAMETERS}`)
-    .then(countryes => {
+  // fetchCountries(`${URL}${query}${PARAMETERS}`)
+  //   .then(countryes => {
+  //     items = countryes;
+  //     render();
+  //   })
+  //   .catch(error => console.log(error));
+
+  try {
+    fetchCountries(`${URL}${query}${PARAMETERS}`);
+  } catch (error) {
+    error => console.log(error);
+  }
+  countryes => {
       items = countryes;
       render();
-    })
-    .catch(error => console.log(error));
+    }
 }
 
 function render() {
